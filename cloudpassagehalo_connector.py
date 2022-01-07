@@ -21,18 +21,15 @@ try:
 except:
     pass
 
-# Standard library imports
-import json  # noqa
 import base64  # noqa
-import requests  # noqa
-
-# Phantom imports
-import phantom.app as phantom  # noqa
-from phantom.base_connector import BaseConnector  # noqa
-from phantom.action_result import ActionResult  # noqa
+import json  # noqa
 from urllib import parse as urllib
 
-# Local imports
+import phantom.app as phantom  # noqa
+import requests  # noqa
+from phantom.action_result import ActionResult  # noqa
+from phantom.base_connector import BaseConnector  # noqa
+
 import cloudpassagehalo_consts as consts  # noqa
 
 # Dictionary that maps each error code with its corresponding message
@@ -1059,6 +1056,7 @@ class CloudpassagehaloConnector(BaseConnector):
 if __name__ == '__main__':
 
     import sys
+
     import pudb
 
     pudb.set_trace()
